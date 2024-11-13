@@ -4,6 +4,8 @@
   --primary-color: #f5f4f2;
   --text-dark: #57534e;
   --text-light: #78716c;
+  --black: #000000;
+  --primary-btn: #758b88;
   --white: #ffffff;
   --max-width: 1200px;
   --header-font: "Lora", serif;
@@ -133,6 +135,26 @@ nav {
 
 .header__content h1 span {
   font-style: italic;
+  color: #4d696f;
+}
+
+.header__content button {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  outline: none;
+  border: 1px solid var(--primary-btn);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--primary-btn);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header__container button:hover {
+  color: var(--text-light);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-btn);
 }
 
 .about__container {
@@ -197,6 +219,25 @@ nav {
   font-size: 1.5rem;
 }
 
+.banner__container button {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  outline: none;
+  border: 1px solid var(--primary-btn);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--primary-btn);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.banner__container button:hover {
+  color: var(--text-light);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-btn);
+}
+
 .display__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -231,6 +272,10 @@ nav {
 .display__content h4 {
   font-size: 2.5rem;
   font-weight: 400;
+}
+
+.display__content h4:hover {
+  color: #4d696f;
 }
 
 .display__content p {
@@ -278,17 +323,19 @@ nav {
 .footer__container button {
   padding: 1rem 2rem;
   outline: none;
-  border: 1px solid #daddd6;
+  border: 1px solid var(--primary-btn);
   font-size: 1rem;
   font-weight: 500;
-  color: var(--text-light);
-  background-color: var(--white);
+  color: var(--white);
+  background-color: var(--primary-btn);
   cursor: pointer;
   transition: 0.3s;
 }
 
 .footer__container button:hover {
-  color: var(--text-dark);
+  color: var(--text-light);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-btn);
 }
 
 .footer__bar {
@@ -296,6 +343,10 @@ nav {
   text-align: center;
   font-size: 0.8rem;
   color: var(--text-light);
+}
+
+.footer__bar a{
+color: var(--text-dark);
 }
 
 @media (width < 900px) {
